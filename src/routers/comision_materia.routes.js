@@ -4,15 +4,15 @@ import {
   listarComisionMateria,
   actualizarComisionMateria,
   eliminarComisionMateria
-} from "../controllers/comisionMateria.controllers.js";
+} from "../controllers/comision_materia.controllers.js";
 
 const router = Router();
 
-router.route("/comision-materia")
+router.route("/")
   .get(listarComisionMateria)
   .post(crearComisionMateria);
 
-router.route("/comision-materia/:id")
+router.route("/:id")
   .put(actualizarComisionMateria)
   .delete(eliminarComisionMateria);
 

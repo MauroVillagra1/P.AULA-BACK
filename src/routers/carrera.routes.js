@@ -8,11 +8,11 @@ import {
 
 const router = Router();
 
-router.route("/carrera")
+router.route("/")
   .get(listarCarrera)
   .post(crearCarrera);
 
-router.route("/carrera/:id")
+router.route("/:id")
   .put(actualizarCarrera)
   .delete(eliminarCarrera);
 

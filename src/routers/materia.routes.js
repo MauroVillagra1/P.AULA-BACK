@@ -8,11 +8,11 @@ import {
 
 const router = Router();
 
-router.route("/materia")
+router.route("/")
   .get(listarMateria)
   .post(crearMateria);
 
-router.route("/materia/:id")
+router.route("/:id")
   .put(actualizarMateria)
   .delete(eliminarMateria);
 

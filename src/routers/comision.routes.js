@@ -8,11 +8,11 @@ import {
 
 const router = Router();
 
-router.route("/comision")
+router.route("/")
   .get(listarComision)
   .post(crearComision);
 
-router.route("/comision/:id")
+router.route("/:id")
   .put(actualizarComision)
   .delete(eliminarComision);
 

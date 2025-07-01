@@ -8,11 +8,11 @@ import {
 
 const router = Router();
 
-router.route("/planta")
+router.route("/")
   .get(listarPlanta)
   .post(crearPlanta);
 
-router.route("/planta/:id")
+router.route("/:id")
   .put(actualizarPlanta)
   .delete(eliminarPlanta);
 

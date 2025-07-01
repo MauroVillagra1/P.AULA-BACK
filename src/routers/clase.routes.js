@@ -3,17 +3,21 @@ import {
   crearClase,
   listarClase,
   actualizarClase,
-  eliminarClase
+  eliminarClase,
+  listarClasesDelDia
 } from "../controllers/clase.controllers.js";
 
 const router = Router();
 
-router.route("/clase")
+router.route("/")
   .get(listarClase)
   .post(crearClase);
 
-router.route("/clase/:id")
+router.get("/dia", listarClasesDelDia);
+
+router.route("/:id")
   .put(actualizarClase)
   .delete(eliminarClase);
+
 
 export default router;

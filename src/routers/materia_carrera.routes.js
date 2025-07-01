@@ -4,15 +4,15 @@ import {
   listarMateriaCarrera,
   actualizarMateriaCarrera,
   eliminarMateriaCarrera
-} from "../controllers/materiaCarrera.controllers.js";
+} from "../controllers/materia_carrera.controllers.js";
 
 const router = Router();
 
-router.route("/materia-carrera")
+router.route("/")
   .get(listarMateriaCarrera)
   .post(crearMateriaCarrera);
 
-router.route("/materia-carrera/:id")
+router.route("/:id")
   .put(actualizarMateriaCarrera)
   .delete(eliminarMateriaCarrera);
 

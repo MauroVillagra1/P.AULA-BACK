@@ -1,4 +1,4 @@
-import ComisionMateria from "../models/comision_materia.Schema.js";
+import ComisionMateria from "../models/comision_materiaSchema.js";
 
 export const listarComisionMateria = async (req, res) => {
   try {

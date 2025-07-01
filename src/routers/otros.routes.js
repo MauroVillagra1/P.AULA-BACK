@@ -8,11 +8,11 @@ import {
 
 const router = Router();
 
-router.route("/otros")
+router.route("/")
   .get(listarOtros)
   .post(crearOtros);
 
-router.route("/otros/:id")
+router.route("/:id")
   .put(actualizarOtros)
   .delete(eliminarOtros);
 
